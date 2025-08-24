@@ -110,7 +110,12 @@ app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
 // Enhanced CORS configuration
-const allowedOrigins = ['http://localhost:3000', 'https://pooqey.ae'];
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://pooqey.ae',
+  'https://www.pooqey.ae'
+];
+
 
 app.use(cors({
   origin: function (origin, callback) {
